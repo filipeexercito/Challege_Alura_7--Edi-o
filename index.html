@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteora</title>
+    <link rel="icon" type="image/png" href="./img/Favicon-48x.png">
+    <link rel="icon" type="image/png" href="./img/Favicon-64px.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__menu">
+            <span class="cabecalho__menu-logo">
+                <img src="/img/LogoMeteora.svg" alt="Logo da METEORA - Empresa de moda urbana">
+            </span>
+
+            <nav class="cabecalho__menu-nav" id="menu__nav">
+                <button class="cabecalho__menu-botao" id="menu__button" type="button"></button>
+                <ul class="cabecalho__menu-lista">
+                    <li class="cabecalho__menu-item"><a class="cabecalho__menu-link" href="#" id="home">Home</a></li>
+                    <li class="cabecalho__menu-item"><a class="cabecalho__menu-link" href="#">Nossas Lojas</a></li>
+                    <li class="cabecalho__menu-item"><a class="cabecalho__menu-link" href="#">Novidades</a></li>
+                    <li class="cabecalho__menu-item"><a class="cabecalho__menu-link" href="#">Promoções</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cabecalho__search">
+            <input class="cabecalho__search-input" type="search" placeholder="Digite o produto" id="inputCabecalhoPesquisa">
+            <button class="cabecalho__search-botao" id="btnCabecalhoPesquisa">Buscar</button>
+        </div>
+    </header>
+
+    <section class="carrossel">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/BannerCarrossel_1_0375.png"
+                        alt="Banner roxo - moda de impacto positivo" data-imagem></div>
+                <div class="swiper-slide"><img src="img/BannerCarrossel_2_0375.png"
+                        alt="Banner rosa - estilo e qualidade para durar" data-imagem></div>
+                <div class="swiper-slide"><img src="img/BannerCarrossel_3_0375.png"
+                        alt="Banner laranja - alto impacto visual, baixo impacto ambiental" data-imagem></div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="categorias">
+        <h2 class="categorias__titulo">Busque por categoria:</h2>
+        <ul class="categorias__cards">
+            <li class="categorias__cards__card">
+                <img src="./img/Categoria_Camisetas.png" alt="imagem de camisetas" class="categorias__imagem">
+                <button id="botaoFiltrarCamisetas" class="categorias__botao" value="Camisetas">Camisetas</button>
+            </li>
+            <li class="categorias__cards__card">
+                <img src="./img/Categoria_Bolsas.png" alt="imagem de bolsas" class="categorias__imagem">
+                <button id="botaoFiltrarBolsas" class="categorias__botao" value="Bolsas">Bolsas</button>
+            </li>
+            <li class="categorias__cards__card">
+                <img src="./img/Categoria_Calcados.png" alt="imagem de calçados" class="categorias__imagem">
+                <button id="botaoFiltrarCalcados" class="categorias__botao" value="Calçados">Calçados</button>
+            </li>
+            <li class="categorias__cards__card">
+                <img src="./img/Categorias_Calcas.png" alt="imagem de calças" class="categorias__imagem">
+                <button id="botaoFiltrarCalcas" class="categorias__botao" value="Calças">Calças</button>
+            </li>
+            <li class="categorias__cards__card">
+                <img src="./img/Categorias_Casacos.png" alt="imagem de casacos" class="categorias__imagem">
+                <button id="botaoFiltrarCasacos" class="categorias__botao" value="Casacos">Casacos</button>
+            </li>
+            <li class="categorias__cards__card">
+                <img src="./img/Categoria_Oculos.png" alt="imagem de óculos" class="categorias__imagem">
+                <button id="botaoFiltrarOculos" class="categorias__botao" value="Óculos">Óculos</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="produtos">
+        <h2 class="produtos__titulo">Produtos que estão bombando!</h2>
+        <ul class="produtos__cards" data-lista>
+            <!-- <li class="produto">
+                <img src="./img/Card camiseta.svg" alt="imagem modelo com camiseta"
+                    class="produto__imagem">
+                <div class="produtos__descricao">
+                    <h3 class="produto__titulo">Camiseta Conforto</h3>
+                    <p class="produto__texto">Multicores e tamanhos. Tecido de algodão 100%,
+                        fresquinho para o verão. Modelagem unissex.</p>
+                    <p class="produto__valor">R$ 70,00</p>
+                    <button type="button" class="produto__botao" data-botaoProduto>Ver
+                        mais</button>
+                </div>
+            </li>
+            <li class="produto">
+                <img src="./img/Card calça.svg" alt="imagem modelo com calça" class="produto__imagem">
+                <div class="produtos__descricao">
+                    <h3 class="produto__titulo">Calça Alfaiataria</h3>
+                    <p class="produto__texto">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida
+                        toda!</p>
+                    <p class="produto__valor">R$ 180,00</p>
+                    <button type="button" class="produto__botao" data-botaoProduto>Ver
+                        mais</button>
+                </div>
+            </li>
+            <li class="produto">
+                <img src="./img/Card tenis.svg" alt="imagem tênis" class="produto__imagem">
+                <div class="produtos__descricao">
+                    <h3 class="produto__titulo">Tênis Chunki</h3>
+                    <p class="produto__texto">Snicker casual com solado mais alto e modelagem robusta.
+                        Modelo unissex.</p>
+                    <p class="produto__valor">R$ 250,00</p>
+                    <button type="button" class="produto__botao" data-botaoProduto>Ver
+                        mais</button>
+                </div>
+            </li>
+            <li class="produto">
+                <img src="./img/Card jaqueta jeans.svg" alt="imagem modelo com jaqueta jeans"
+                    class="produto__imagem">
+                <div class="produtos__descricao">
+                    <h3 class="produto__titulo">Jaqueta Jeans</h3>
+                    <p class="produto__texto">Modelo Unissex oversized com gola de camurça. Atemporal
+                        e autêntica.</p>
+                    <p class="produto__valor">R$ 150,00</p>
+                    <button type="button" class="produto__botao" data-botaoProduto>Ver
+                        mais</button>
+                </div>
+            </li>
+            <li class="produto">
+                <img src="./img/Cards óculos.svg" alt="imagem modelo com óculos" class="produto__imagem">
+                <div class="produtos__descricao">
+                    <h3 class="produto__titulo">Óculos Redondo</h3>
+                    <p class="produto__texto">Armação metálica em grafite com lentes arredondadas. Sem
+                        erro!</p>
+                    <p class="produto__valor">R$ 120,00</p>
+                    <button type="button" class="produto__botao" data-botaoProduto>Ver
+                        mais</button>
+                </div>
+            </li>
+            <li class="produto">
+                <img src="./img/Card bolsa.svg" alt="imagem modelo com bolsa" class="produto__imagem">
+                <div class="produtos__descricao">
+                    <h3 class="produto__titulo">Bolsa coringa</h3>
+                    <p class="produto__texto">Bolsa camel em couro sintético de alta duração. Ideal
+                        para acompanhar você por uma vida!</p>
+                    <p class="produto__valor">R$ 120,00</p>
+                    <button type="button" class="produto__botao" data-botaoProduto>Ver
+                        mais</button>
+                </div>
+            </li> -->
+        </ul>
+    </section>
+
+    <section class="facilidades">
+        <h2 class="facilidades__titulo">Conheça todas as nossas facilidades</h2>
+        <ul class="cards">
+            <li class="facilidades__card">
+                <img src="./img/UnionPix.svg" class="facilidades__card__imagem" alt="imagem union pix">
+                <div class="facilidades__card__descricao">
+                    <h3 class="facilidades__card__titulo">PAGUE PELO PIX</h3>
+                    <p class="facilidades__card__paragrafo">Ganhe 5% OFF em <br> pagamentos via PIX</p>
+                </div>
+            </li>
+            <li class="facilidades__card">
+                <img src="./img/arrow_repeat.svg" class="facilidades__card__imagem" alt="imagem arrow repeat">
+                <div class="facilidades__card__descricao">
+                    <h3 class="facilidades__card__titulo">TROCA GRÁTIS</h3>
+                    <p class="facilidades__card__paragrafo">Fique livre para trocar em até <br> 30 dias.</p>
+                </div>
+            </li>
+            <li class="facilidades__card">
+                <img src="./img/Subtract.svg" class="facilidades__card__imagem" alt="imagem subtract">
+                <div class="facilidades__card__descricao">
+                    <h3 class="facilidades__card__titulo">SUSTENTABILIDADE</h3>
+                    <p class="facilidades__card__paragrafo">Moda responsável, que respeita <br> o meio ambiente.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter__border">
+            <p class="newsletter__descricao">
+                Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <strong>Cadastre-se!</strong>
+            </p>
+            <form class="newsletter__formulario" id="novoEmail">
+                <input type="email" class="newsletter__input" id="newsletter__input" placeholder="Digite seu email" minlength="4" required>
+                <button type="submit" class="newsletter__botao" id="newsletter__botao">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p class="rodape__descricao">
+            2023 @ Desenvolvido por Filipe | Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+
+    <dialog class="modal" id="modal__produto" aria-labelledby="dialog-title">
+        <!-- <div class="modal__cabecalho">
+            <div class="modal__cabecalho__descricao">
+                <img src="./img/Vector_Modal.svg" alt="vector da modal">
+                <h2 id="dialog-title">Confira detalhes sobre o produto</h2>
+            </div>
+            <button type="button" class="modal__cabecalho__botaoFechar" aria-label="Fechar modal"></button>
+        </div>
+        <div class="modal__card">
+            <img src="./img/Card jaqueta jeans.svg" alt="imagem jaqueta jeans">
+            <div class="modal__card__descricao">
+                <h3 class="modal__card__descricao__titulo">Jaqueta Jeans</h3>
+                <p class="modal__card__descricao__texto">Modelo Unissex oversized com gola de camurça. Atemporal e
+                    autêntica.</p>
+                <p class="modal__card__descricao__valor">R$ 150,00</p>
+                <p class="modal__card__descricao__loja">Vendido e entregue por Riachuelo</p>
+                <div class="modal__inputs">
+                    <h4>Cores:</h4>
+                    <ul class="modal__inputs__lista">
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" name="grupo-cores" id="azul-claro" />
+                            <label for="azul-claro">Azul Claro</label>
+                        </li>
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" name="grupo-cores" id="offwhite" />
+                            <label for="offwhite">Offwhite</label>
+                        </li>
+                        <li class="modal__inputs__lista__item linha">
+                            <input type="radio" name="grupo-cores" id="preto" />
+                            <label for="preto">Preto</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__inputs">
+                    <h4>Tamanho:</h4>
+                    <ul class="modal__inputs__lista tamanho">
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" id="P" name="grupo-tamanhos" />
+                            <label for="P">P</label>
+                        </li>
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" id="PP" name="grupo-tamanhos" />
+                            <label for="PP">PP</label>
+                        </li>
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" id="M" name="grupo-tamanhos" />
+                            <label for="M">M</label>
+                        </li>
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" id="G" name="grupo-tamanhos" />
+                            <label for="G">G</label>
+                        </li>
+                        <li class="modal__inputs__lista__item">
+                            <input type="radio" id="GG" name="grupo-tamanhos" />
+                            <label for="GG">GG</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="adicionar__sacola">Adicionar à sacola</button>
+            </div>
+        </div> -->
+    </dialog>
+
+    <dialog class="modal" id="modal__newsletter" aria-labelledby="dialog-titulo">
+        <div class="modal__cabecalho">
+            <div class="modal__cabecalho__descricao">
+                <img src="./img/Vector_Modal.svg" alt="vector da modal">
+                <h2 id="dialog-titulo">E-mail cadastrado com sucesso!</h2>
+            </div>
+            <button type="button" aria-label="Fechar modal" class="modal__cabecalho__botaoFechar"></button>
+        </div>
+        <p class="modal__paragrafo">Em breve você receberá novidades exclusivas da Meteora.</p>
+    </dialog>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/exibirOsProdutosNaTela.js" type="module"></script>
+    <script src="./js/filtrarPorCategoria.js" type="module"></script>
+    <script src="./js/filtrarPorNome.js" type="module"></script>
+    <script src="./js/modal.js"></script>
+    
+</body>
+
+</html>

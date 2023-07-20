@@ -1,0 +1,20 @@
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    color: var(--secundary-font-color);
+}
+
+.rodape__descricao {
+    padding: 17px 64px;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    .rodape {
+        height: 54px;
+    }
+}

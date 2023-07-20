@@ -1,0 +1,76 @@
+{
+  "produtos": [
+    {
+      "titulo": "Camiseta Conforto",
+      "descricao": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+      "valor": 70.89,
+      "imagem": "./img/Card camiseta.svg",
+      "alt": "imagem de um modelo vestido com a camiseta conforto",
+      "loja": "Riachuelo",
+      "cores": ["Azul claro", "Offwhite", "Preto"],
+      "tamanhos": ["P", "PP", "M", "G", "GG"],
+      "quantidade": 7.00,
+      "categoria": "Camisetas"
+    },
+    {
+      "titulo": "Calça Alfaiataria",
+      "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+      "valor": 180.00,
+      "imagem": "./img/Card calça.svg",
+      "alt": "imagem de uma modelo vestida com a calça alfaiataria",
+      "loja": "Riachuelo",
+      "cores": ["Preto", "Branco"],
+      "tamanhos": ["P", "M", "G"],
+      "quantidade": 5,
+      "categoria": "Calças"
+    },
+    {
+      "titulo": "Tênis Chunky",
+      "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+      "valor": 250.00,
+      "imagem": "./img/Card tenis.svg",
+      "alt": "imagem de um modelo utilizando o tênis chunky",
+      "loja": "Riachuelo",
+      "cores": ["Preto", "Branco"],
+      "tamanhos": ["35", "36", "37", "38", "39"],
+      "quantidade": 8,
+      "categoria": "Calçados"
+    },
+    {
+      "titulo": "Jaqueta Jeans",
+      "descricao": "Modelo Unissex oversized com gola de camurça. Atemporal e autêntica.",
+      "valor": 150.00,
+      "imagem": "./img/Card jaqueta jeans.svg",
+      "alt": "imagem de um modelo vestido com a jaqueta jeans",
+      "loja": "Riachuelo",
+      "cores": ["Azul claro", "Offwhite", "Preto"],
+      "tamanhos": ["P", "PP", "M", "G", "GG"],
+      "quantidade": 3,
+      "categoria": "Casacos"
+    },
+    {
+      "titulo": "Óculos Redondo",
+      "descricao": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+      "valor": 120.00,
+      "imagem": "./img/Cards óculos.svg",
+      "alt": "imagem de um modelo utilizando o óculos redondo",
+      "loja": "Riachuelo",
+      "cores": ["Dourado", "Prateado"],
+      "tamanhos": ["P", "M", "G"],
+      "quantidade": 12,
+      "categoria": "Óculos"
+    },
+    {
+      "titulo": "Bolsa Coringa",
+      "descricao": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+      "valor": 120.00,
+      "imagem": "./img/Card bolsa.svg",
+      "alt": "imagem de um modelo segurando a bolsa coringa",
+      "loja": "Riachuelo",
+      "cores": ["Preto", "Marrom", "Bege"],
+      "tamanhos": ["P", "M", "G"],
+      "quantidade": 6,
+      "categoria": "Bolsas"
+    }
+  ]
+}

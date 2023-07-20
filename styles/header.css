@@ -1,0 +1,232 @@
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 58px;
+}
+
+.cabecalho__menu-logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 22px;
+}
+
+.cabecalho__menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cabecalho__menu-nav_active {
+    z-index: 9;
+    width: 40vw;
+    height: 12.3em;
+}
+
+.cabecalho__menu-botao {
+    background-image: url(../img/IconeHamburguer.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 21px;
+    margin-top: 20px;
+}
+
+.cabecalho__menu-lista {
+    display: none;
+}
+
+.cabecalho__menu-link {
+    text-decoration: none;
+    color: var(--secundary-font-color);
+    white-space: nowrap;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: var(--font-weight-1);
+    position: relative;
+}
+
+.cabecalho__menu-item:first-child>.cabecalho__menu-link {
+    color: var(--secundary-color);
+    font-weight: var(--font-weight-3);
+}
+
+.cabecalho__menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* Ajuste a distância da linha em relação ao conteúdo */
+    left: 0;
+    width: 27vw;
+    /* Ajuste o tamanho para ocupar todo o width da tabela */
+    height: 1px;
+    background-color: var(--secundary-font-color);
+    /* Cor da linha branca */
+}
+
+.cabecalho__menu-item:last-child>.cabecalho__menu-link::after {
+    content: none;
+}
+
+.cabecalho__menu-lista_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--tertiary-background-color);
+    width: 83%;
+    height: 80%;
+}
+
+.cabecalho__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: var(--secundary-background-color);
+    height: 5.5em;
+}
+
+.cabecalho__search-input {
+    width: 220px;
+    height: 39px;
+    border: var(--primary-color) solid 1px;
+    padding-left: 1em;
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+.cabecalho__search-botao {
+    width: 88.42px;
+    height: 39px;
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-2);
+    border: var(--primary-color) solid 1px;
+    background-color: var(--secundary-background-color);
+    font-size: 16px;
+}
+
+.cabecalho__search-input::placeholder {
+    font-family: var(--primary-font);
+}
+
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 3.6em;
+    }
+
+    .cabecalho__menu {
+        gap: 1.3em;
+    }
+
+    .cabecalho__menu-botao {
+        display: none;
+    }
+
+    .cabecalho__menu-nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .cabecalho__menu-lista {
+        display: flex;
+        gap: 1.3em;
+    }
+
+    .cabecalho__menu-link {
+        font-size: 13px;
+    }
+
+    .cabecalho__menu-link:hover {
+        color: var(--secundary-color);
+    }
+
+    .cabecalho__menu-item:first-child>.cabecalho__menu-link {
+        color: var(--secundary-font-color);
+        font-weight: var(--font-weight-1);
+    }
+
+    .cabecalho__menu-item:first-child>.cabecalho__menu-link:hover {
+        color: var(--secundary-color);
+    }
+
+    .cabecalho__menu-link::after {
+        display: none;
+    }
+
+    .cabecalho__search {
+        background-color: var(--primary-background-color);
+        height: auto;
+    }
+
+    .cabecalho__search-input {
+        width: 145px;
+        height: 38px;
+        margin-left: 3em;
+    }
+
+    .cabecalho__search-botao {
+        width: 67px;
+        height: 38px;
+        background-color: var(--primary-background-color);
+        color: var(--tertiary-color);
+        font-size: 13px;
+        font-weight: var(--font-weight-1);
+        border: #ffffff solid 1px;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .cabecalho__menu {
+        gap: 2.5em;
+    }
+
+    .cabecalho__menu-lista {
+        gap: 2.5em;
+    }
+
+    .cabecalho__menu-link {
+        font-size: 16px;
+    }
+
+    .cabecalho__search-botao {
+        width: 80px;
+        font-size: 16px;
+        margin-right: 1em;
+    }
+
+    .cabecalho__search-input {
+        width: 170px;
+        margin-left: 0;
+    }
+
+    .cabecalho__search-input::placeholder {
+        font-size: 16px;
+    }
+}
